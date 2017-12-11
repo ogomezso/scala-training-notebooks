@@ -1,0 +1,11 @@
+version: "3"
+services:
+  notebook:
+    image: rockthejvm/rockthejvm:v0.0.1
+    ports:
+      - 8080:8080
+    volumes:
+      - rockthejvm:/home/student/notebooks
+
+volumes:
+  rockthejvm:
